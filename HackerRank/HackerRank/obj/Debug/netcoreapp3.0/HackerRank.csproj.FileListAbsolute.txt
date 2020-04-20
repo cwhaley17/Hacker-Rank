@@ -1,0 +1,11 @@
+C:\Users\cj.whaley\source\repos\Hacker-Rank\HackerRank\HackerRank\bin\Debug\netcoreapp3.0\HackerRank.exe
+C:\Users\cj.whaley\source\repos\Hacker-Rank\HackerRank\HackerRank\bin\Debug\netcoreapp3.0\HackerRank.deps.json
+C:\Users\cj.whaley\source\repos\Hacker-Rank\HackerRank\HackerRank\bin\Debug\netcoreapp3.0\HackerRank.runtimeconfig.json
+C:\Users\cj.whaley\source\repos\Hacker-Rank\HackerRank\HackerRank\bin\Debug\netcoreapp3.0\HackerRank.runtimeconfig.dev.json
+C:\Users\cj.whaley\source\repos\Hacker-Rank\HackerRank\HackerRank\bin\Debug\netcoreapp3.0\HackerRank.dll
+C:\Users\cj.whaley\source\repos\Hacker-Rank\HackerRank\HackerRank\bin\Debug\netcoreapp3.0\HackerRank.pdb
+C:\Users\cj.whaley\source\repos\Hacker-Rank\HackerRank\HackerRank\obj\Debug\netcoreapp3.0\HackerRank.csprojAssemblyReference.cache
+C:\Users\cj.whaley\source\repos\Hacker-Rank\HackerRank\HackerRank\obj\Debug\netcoreapp3.0\HackerRank.AssemblyInfoInputs.cache
+C:\Users\cj.whaley\source\repos\Hacker-Rank\HackerRank\HackerRank\obj\Debug\netcoreapp3.0\HackerRank.AssemblyInfo.cs
+C:\Users\cj.whaley\source\repos\Hacker-Rank\HackerRank\HackerRank\obj\Debug\netcoreapp3.0\HackerRank.dll
+C:\Users\cj.whaley\source\repos\Hacker-Rank\HackerRank\HackerRank\obj\Debug\netcoreapp3.0\HackerRank.pdb

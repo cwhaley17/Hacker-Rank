@@ -19,7 +19,7 @@ namespace HackerRank
     {
         static void Main(string[] args)
         {
-            //plusMinus(arr);
+            //plusMinus(new int[] { -4, 3, -9, 0, 4, 1 });
             //staircase(n);
 
             Console.ReadLine();
@@ -60,22 +60,25 @@ namespace HackerRank
                     negCount++;
             }
 
-            // There has to be a much cleaner way to do this. This is so bloated.
-            decimal a = Convert.ToDecimal(posCount);
-            decimal b = Convert.ToDecimal(negCount);
-            decimal c = Convert.ToDecimal(zroCount);
-
-            decimal posDec = Math.Round(Convert.ToDecimal(a / arrCount), 6);
-            decimal negDec = Math.Round(Convert.ToDecimal(b / arrCount), 6);
-            decimal zroDec = Math.Round(Convert.ToDecimal(c / arrCount), 6);
-
             // positive
-            Console.WriteLine(posDec);
+            Console.WriteLine(getFraction(posCount, arrCount));
             // negative
-            Console.WriteLine(negDec);
+            Console.WriteLine(getFraction(negCount, arrCount));
             // zeros
-            Console.WriteLine(zroDec);
-            Console.ReadLine();
+            Console.WriteLine(getFraction(zroCount, arrCount));
+        }
+
+        private static decimal getFraction(int x, int count)
+        {
+            // Shoot back a decimal. 
+            try
+            {
+                return Math.Round(Convert.ToDecimal(Convert.ToDecimal(x) / count), 6);
+            }
+            catch (Exception e)
+            {
+                return x;
+            }
         }
     }
 }
