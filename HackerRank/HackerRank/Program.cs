@@ -21,8 +21,21 @@ namespace HackerRank
         {
             //plusMinus(new int[] { -4, 3, -9, 0, 4, 1 });
             //staircase(n);
+            //birthdayCakeCandles(new int[] { 3,2,1,3 }); // returns 2
 
             Console.ReadLine();
+        }
+
+        static int birthdayCakeCandles(int[] ar)
+        {
+            // I think we just sort ar and grab the highest value then get a count of the number of entries are equal to that value?
+            var sortedInput = ar.ToList();
+
+            sortedInput.Sort();
+
+            int numberOfHighest = sortedInput.Where(x => x == sortedInput[sortedInput.Count() - 1]).Count();
+
+            return numberOfHighest;
         }
 
         // need to maintain a count for across as well as down to monitor how many spaces I need and how many steps down to take
