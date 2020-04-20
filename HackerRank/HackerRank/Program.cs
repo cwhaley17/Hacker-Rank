@@ -22,8 +22,31 @@ namespace HackerRank
             //plusMinus(new int[] { -4, 3, -9, 0, 4, 1 });
             //staircase(n);
             //birthdayCakeCandles(new int[] { 3,2,1,3 }); // returns 2
+            var res = timeConversion("07:05:45PM");
+
+            Console.WriteLine(res);
 
             Console.ReadLine();
+        }
+
+        static string timeConversion(string s)
+        {
+            // take a string in AM/PM and return it in military
+            var timeSeperated = s.Split(':');
+            if (timeSeperated[timeSeperated.Length - 1].ToLower().Contains("pm"))
+            {
+                // remove the AM/PM
+                timeSeperated[timeSeperated.Length - 1] = timeSeperated[timeSeperated.Length - 1].ToLower().Replace("pm", "");
+                int currentTime = int.Parse(timeSeperated[0]) + 12;
+                timeSeperated[0] = currentTime.ToString();
+            }
+            else
+            {
+                // remove the AM/PM
+                timeSeperated[timeSeperated.Length - 1] = timeSeperated[timeSeperated.Length - 1].ToLower().Replace("am", "");
+                if (timeSeperated[0].Contains("12")) timeSeperated[0] = "00"; // this fixed nearly all failing test cases. What edge case am I missing?
+            }
+            return String.Format("{0}:{1}:{2}", timeSeperated[0], timeSeperated[1], timeSeperated[2]);
         }
 
         static int birthdayCakeCandles(int[] ar)
