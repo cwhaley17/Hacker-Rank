@@ -37,7 +37,8 @@ namespace HackerRank
             {
                 // remove the AM/PM
                 timeSeperated[timeSeperated.Length - 1] = timeSeperated[timeSeperated.Length - 1].ToLower().Replace("pm", "");
-                int currentTime = int.Parse(timeSeperated[0]) + 12;
+                //int currentTime = int.Parse(timeSeperated[0]) + 12;
+                int currentTime = timeSeperated[0] == "12" ? 12 : int.Parse(timeSeperated[0]) + 12;
                 timeSeperated[0] = currentTime.ToString();
             }
             else
